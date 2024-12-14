@@ -1,0 +1,126 @@
+/* Variables globales */
+:root {
+    --primary-color: #333;
+    --secondary-color: #666;
+    --background-color: #f4f4f4;
+    --font-family: Arial, sans-serif;
+  }
+  
+  /* Reset et styles de base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Typographie */
+  h1, h2, h3 {
+    margin-bottom: 15px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    color: var(--secondary-color);
+  }
+  
+  h3 {
+    font-size: 1.3em;
+    color: var(--secondary-color);
+  }
+  
+  /* Sections */
+  #informations, #informatique, #Compétences, #éxperiences, #diplômes {
+    margin-bottom: 30px;
+  }
+  
+  /* Listes */
+  ul, ol {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
+  
+  /* Media Queries pour la responsivité */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+  .navbar {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar li a:hover {
+    background-color: #555;
+}
+
+/* Ajustement pour le contenu sous la navbar */
+body {
+    padding-top: 50px;
+}
+
+/* Media query pour la responsivité */
+@media screen and (max-width: 600px) {
+    .navbar li {
+        float: none;
+    }
+    .navbar li a {
+        border-bottom: 1px solid #555;
+    }
+}
